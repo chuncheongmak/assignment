@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-var mongodbURL = 'mongodb://chuncheongmak.cloudapp.net/test';
+var mongodbURL = 'mongodb://localhost:8099/test';
 var mongoose = require('mongoose');
 
 app.post('/',function(req,res) {
